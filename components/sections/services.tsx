@@ -76,7 +76,7 @@ export function ServicesSection() {
               <TabsContent key={service.key} value={service.key} className="mt-8">
                 <Card className="border-none shadow-lg">
                   <CardHeader className="text-center pb-8">
-                    <div className="w-20 h-20 mx-auto mb-6 rounded-3xl bg-gradient-to-br ${service.color} flex items-center justify-center">
+                    <div className={`w-20 h-20 mx-auto mb-6 rounded-3xl bg-gradient-to-br ${service.color} flex items-center justify-center`}>
                       <Icon className="h-10 w-10 text-white" />
                     </div>
                     <CardTitle className="text-2xl md:text-3xl mb-4">

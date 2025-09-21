@@ -44,7 +44,7 @@ export function Navbar() {
     <nav className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-16 items-center px-4">
         <Link href={`/${locale}`} className="flex items-center space-x-2">
-          <span className="text-2xl font-bold text-primary">{{AgencyName}}</span>
+          <span className="text-2xl font-bold text-primary">وكالة البرمجيات</span>
         </Link>
 
         {/* Desktop Navigation */}
@@ -77,8 +77,10 @@ export function Navbar() {
             onClick={toggleTheme}
             className="hidden sm:flex"
           >
-            <Sun className="h-4 w-4 rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" />
-            <Moon className="absolute h-4 w-4 rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" />
+            <div className="relative">
+              <Sun className="h-4 w-4 rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" />
+              <Moon className="absolute top-0 left-0 h-4 w-4 rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" />
+            </div>
           </Button>
 
           <Button asChild className="hidden sm:inline-flex">
@@ -112,8 +114,10 @@ export function Navbar() {
                     {locale === 'ar' ? 'EN' : 'ع'}
                   </Button>
                   <Button variant="outline" size="sm" onClick={toggleTheme}>
-                    <Sun className="h-4 w-4 rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" />
-                    <Moon className="absolute h-4 w-4 rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" />
+                    <div className="relative">
+                      <Sun className="h-4 w-4 rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" />
+                      <Moon className="absolute top-0 left-0 h-4 w-4 rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" />
+                    </div>
                   </Button>
                 </div>
                 <Button asChild className="w-full">

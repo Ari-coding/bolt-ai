@@ -3,6 +3,7 @@ import { getMessages } from 'next-intl/server';
 import './globals.css';
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
+import { redirect } from 'next/navigation';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -14,21 +15,9 @@ export const metadata: Metadata = {
 
 export default async function RootLayout({
   children,
-  params: { locale }
 }: {
   children: React.ReactNode;
-  params: { locale: string };
 }) {
-  const messages = await getMessages();
-  const direction = locale === 'ar' ? 'rtl' : 'ltr';
-
-  return (
-    <html lang={locale} dir={direction}>
-      <body className={inter.className}>
-        <NextIntlClientProvider messages={messages}>
-          {children}
-        </NextIntlClientProvider>
-      </body>
-    </html>
-  );
+  // Redirect to default locale
+  redirect('/ar');
 }
