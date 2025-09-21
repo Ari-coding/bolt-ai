@@ -130,7 +130,7 @@ export function ContactForm() {
             <FormItem>
               <FormLabel>{t('form.phone')}</FormLabel>
               <FormControl>
-                <Input type="tel" placeholder={t('form.phone')} {...field} />
+                <Input type="tel" placeholder={t('form.phone')} {...field} value={field.value || ''} />
               </FormControl>
               <FormMessage />
             </FormItem>
@@ -209,12 +209,12 @@ export function ContactForm() {
 
         <Button type="submit" size="lg" className="w-full" disabled={isSubmitting}>
           {isSubmitting ? (
-            <div className="flex items-center">
+            <div className="flex items-center justify-center">
               <div className="animate-spin rounded-full h-4 w-4 border-b-2 border-white mr-2"></div>
               {locale === 'ar' ? 'جاري الإرسال...' : 'Sending...'}
             </div>
           ) : (
-            <div className="flex items-center">
+            <div className="flex items-center justify-center">
               <Send className="h-4 w-4 mr-2" />
               {t('form.submit')}
             </div>

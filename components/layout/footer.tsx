@@ -22,7 +22,7 @@ export function Footer() {
             <p className="text-sm text-muted-foreground">
               {t('description')}
             </p>
-            <div className="flex space-x-3">
+            <div className="flex space-x-3 rtl:space-x-reverse">
               <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
                 <Github className="h-5 w-5" />
               </a>
@@ -77,15 +77,15 @@ export function Footer() {
           <div className="space-y-4">
             <h4 className="font-semibold">{t('contact_info')}</h4>
             <div className="space-y-3 text-sm">
-              <div className="flex items-center space-x-2">
+              <div className="flex items-center space-x-2 rtl:space-x-reverse">
                 <Mail className="h-4 w-4 text-primary" />
                 <span>hello@agency.com</span>
               </div>
-              <div className="flex items-center space-x-2">
+              <div className="flex items-center space-x-2 rtl:space-x-reverse">
                 <Phone className="h-4 w-4 text-primary" />
                 <span>+964 750 123 4567</span>
               </div>
-              <div className="flex items-center space-x-2">
+              <div className="flex items-center space-x-2 rtl:space-x-reverse">
                 <MapPin className="h-4 w-4 text-primary" />
                 <span>{locale === 'ar' ? 'بغداد، العراق' : 'Baghdad, Iraq'}</span>
               </div>

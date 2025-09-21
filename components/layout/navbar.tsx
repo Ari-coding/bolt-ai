@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import { useTranslations, useLocale } from 'next-intl';
-import { useRouter, usePathname } from 'next/navigation';
+import { usePathname } from 'next/navigation';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import {
@@ -25,7 +25,6 @@ const navigation = [
 export function Navbar() {
   const t = useTranslations('nav');
   const locale = useLocale();
-  const router = useRouter();
   const pathname = usePathname();
   const { theme, setTheme } = useTheme();
   const [isOpen, setIsOpen] = useState(false);
@@ -33,7 +32,7 @@ export function Navbar() {
   const toggleLanguage = () => {
     const newLocale = locale === 'ar' ? 'en' : 'ar';
     const path = pathname.replace(`/${locale}`, '') || '/';
-    router.push(`/${newLocale}${path}`);
+    window.location.href = `/${newLocale}${path}`;
   };
 
   const toggleTheme = () => {

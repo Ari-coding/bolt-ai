@@ -60,7 +60,7 @@ export function ValuesSection() {
                   <h3 className="text-xl font-semibold mb-4">
                     {t(`${value.key}.title`)}
                   </h3>
-                  <p className="text-muted-foreground leading-relaxed">
+                  <p className="text-muted-foreground leading-relaxed text-center">
                     {t(`${value.key}.description`)}
                   </p>
                 </CardContent>

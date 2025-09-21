@@ -89,7 +89,7 @@ export function ServicesSection() {
                   <CardContent className="pt-0">
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-8">
                       {service.features.map((feature, index) => (
-                        <div key={index} className="flex items-center space-x-2 p-3 rounded-lg bg-muted/50">
+                        <div key={index} className="flex items-center space-x-2 rtl:space-x-reverse p-3 rounded-lg bg-muted/50">
                           <CheckCircle className="h-5 w-5 text-green-500 flex-shrink-0" />
                           <span className="text-sm font-medium">{feature}</span>
                         </div>
