@@ -42,29 +42,29 @@ export function Navbar() {
   return (
     <nav className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-16 items-center px-4">
-        <Link href={`/${locale}`} className="flex items-center space-x-2">
+        <Link href={`/${locale}`} className="flex items-center space-x-2 rtl:space-x-reverse">
           <span className="text-2xl font-bold text-primary">وكالة البرمجيات</span>
         </Link>
 
         {/* Desktop Navigation */}
-        <div className="hidden md:flex md:items-center md:space-x-6 mx-6">
+        <div className="hidden md:flex md:items-center md:space-x-6 rtl:space-x-reverse mx-6">
           {navigation.map((item) => (
             <Link
               key={item.name}
               href={`/${locale}${item.href}`}
               className="text-sm font-medium transition-colors hover:text-primary"
             >
-              {t(item.name as any)}
+              {t(item.name)}
             </Link>
           ))}
         </div>
 
-        <div className="flex items-center space-x-2 md:space-x-4 mr-auto">
+        <div className="flex items-center space-x-2 rtl:space-x-reverse md:space-x-4 mr-auto">
           <Button
             variant="ghost"
             size="sm"
             onClick={toggleLanguage}
-            className="hidden sm:flex items-center space-x-1"
+            className="hidden sm:flex items-center space-x-1 rtl:space-x-reverse"
           >
             <Globe className="h-4 w-4" />
             <span>{locale === 'ar' ? 'EN' : 'ع'}</span>
@@ -104,10 +104,10 @@ export function Navbar() {
                     className="text-sm font-medium transition-colors hover:text-primary"
                     onClick={() => setIsOpen(false)}
                   >
-                    {t(item.name as any)}
+                    {t(item.name)}
                   </Link>
                 ))}
-                <div className="flex items-center space-x-2 pt-4 border-t">
+                <div className="flex items-center space-x-2 rtl:space-x-reverse pt-4 border-t">
                   <Button variant="outline" size="sm" onClick={toggleLanguage}>
                     <Globe className="h-4 w-4 mr-1" />
                     {locale === 'ar' ? 'EN' : 'ع'}

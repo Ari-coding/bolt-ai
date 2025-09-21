@@ -70,7 +70,7 @@ export default function ContactPage() {
                     <CardTitle>معلومات التواصل</CardTitle>
                   </CardHeader>
                   <CardContent className="space-y-6">
-                    <div className="flex items-start space-x-3">
+                    <div className="flex items-start space-x-3 rtl:space-x-reverse">
                       <Mail className="h-5 w-5 text-primary mt-1" />
                       <div>
                         <p className="font-medium">البريد الإلكتروني</p>
@@ -78,7 +78,7 @@ export default function ContactPage() {
                       </div>
                     </div>
                     
-                    <div className="flex items-start space-x-3">
+                    <div className="flex items-start space-x-3 rtl:space-x-reverse">
                       <Phone className="h-5 w-5 text-primary mt-1" />
                       <div>
                         <p className="font-medium">رقم الهاتف</p>
@@ -86,7 +86,7 @@ export default function ContactPage() {
                       </div>
                     </div>
 
-                    <div className="flex items-start space-x-3">
+                    <div className="flex items-start space-x-3 rtl:space-x-reverse">
                       <MapPin className="h-5 w-5 text-primary mt-1" />
                       <div>
                         <p className="font-medium">الموقع</p>

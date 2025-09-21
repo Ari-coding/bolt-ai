@@ -2,7 +2,6 @@ import { Navbar } from '@/components/layout/navbar';
 import { Footer } from '@/components/layout/footer';
 import { ServicesSection } from '@/components/sections/services';
 import { ThemeProvider } from '@/components/theme-provider';
-import { useTranslations } from 'next-intl';
 
 export default function ServicesPage() {
   return (

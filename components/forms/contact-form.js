@@ -34,15 +34,13 @@ const formSchema = z.object({
   message: z.string().min(10, 'الرسالة يجب أن تكون أكثر من 10 أحرف'),
 });
 
-type FormData = z.infer<typeof formSchema>;
-
 export function ContactForm() {
   const t = useTranslations('contact');
   const servicesT = useTranslations('services');
   const locale = useLocale();
   const [isSubmitting, setIsSubmitting] = useState(false);
 
-  const form = useForm<FormData>({
+  const form = useForm({
     resolver: zodResolver(formSchema),
     defaultValues: {
       name: '',
@@ -54,7 +52,7 @@ export function ContactForm() {
     },
   });
 
-  const onSubmit = async (data: FormData) => {
+  const onSubmit = async (data) => {
     setIsSubmitting(true);
     try {
       // Here you would typically send the data to your API
