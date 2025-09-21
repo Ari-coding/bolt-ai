@@ -1,0 +1,83 @@
+{
+  "nav": {
+    "home": "Home",
+    "services": "Services",
+    "portfolio": "Portfolio", 
+    "about": "About",
+    "blog": "Blog",
+    "careers": "Careers",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "Building Software That Powers Your Growth",
+    "subtitle": "Fast, secure digital solutions built with Next.js and modern shadcn/ui interfaces",
+    "cta_primary": "Get Started",
+    "cta_secondary": "View Our Services",
+    "trusted_by": "Trusted by 100+ clients"
+  },
+  "values": {
+    "performance": {
+      "title": "Superior Performance",
+      "description": "Lightning-fast websites with optimized Pagespeed and advanced SSR/SSG techniques"
+    },
+    "security": {
+      "title": "Trusted Security",
+      "description": "We implement OWASP best practices and global security standards"
+    },
+    "scalability": {
+      "title": "Scalability",
+      "description": "Modular, API-first architecture that grows with your business"
+    },
+    "experience": {
+      "title": "Premium User Experience", 
+      "description": "Modern interfaces with shadcn/ui and full Arabic language support"
+    }
+  },
+  "services": {
+    "title": "Our Technical Services",
+    "subtitle": "Comprehensive software solutions for your digital growth",
+    "web_development": {
+      "title": "Modern Web Development",
+      "description": "Professional websites built with Next.js featuring SSR/SSG and optimized images"
+    },
+    "saas_dashboards": {
+      "title": "SaaS Applications & Dashboards",
+      "description": "Advanced authentication systems, user roles, and interactive data tables"
+    },
+    "backend_systems": {
+      "title": "Backend Systems",
+      "description": "Robust APIs with Node.js, Express, and external integrations"
+    },
+    "ecommerce": {
+      "title": "E-commerce Solutions",
+      "description": "Complete e-commerce solutions with secure payment gateways"
+    },
+    "get_quote": "Get Quote"
+  },
+  "contact": {
+    "title": "Start Your Project With Us",
+    "subtitle": "We're here to turn your idea into a successful digital reality",
+    "form": {
+      "name": "Full Name",
+      "email": "Email Address",
+      "phone": "Phone Number (Optional)",
+      "service": "Required Service Type",
+      "budget": "Expected Budget",
+      "message": "Project Details",
+      "submit": "Send Request",
+      "whatsapp": "Contact via WhatsApp"
+    },
+    "info": {
+      "email": "hello@agency.com", 
+      "phone": "+964 750 123 4567",
+      "address": "Baghdad, Iraq"
+    }
+  },
+  "footer": {
+    "description": "Software agency specialized in developing websites and applications using the latest technologies",
+    "quick_links": "Quick Links",
+    "services_links": "Our Services",
+    "contact_info": "Contact Information",
+    "rights": "All rights reserved"
+  }
+}
